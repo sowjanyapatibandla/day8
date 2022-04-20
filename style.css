@@ -1,0 +1,45 @@
+/* .box1 {
+    height: 150px;
+    width: 200px;
+    background: red;
+    float: right;
+}
+.box2 {
+    border: 2px solid red;
+    height: 150px;
+    width: 200px;
+    clear: right;
+}
+.box3 {
+    height: 150px;
+    width: 200px;
+    background: red;
+    float: right;
+}
+.box4 {
+    border: 2px solid red;
+    height: 150px;
+    width: 200px;
+    clear: right;
+} */
+
+div {
+    height: 80px;
+    width: 160px;
+    padding: 20px;
+    border: 8px solid red;
+    background-color: yellow;
+}
+
+.content {
+    box-sizing: content-box;
+    /* Total Width:160px+(2*8)+(2*20)=160+16+40=176+40=216
+Total height:80px+(2*8)+40=80+16+40=136
+*/
+}
+
+.border {
+    box-sizing: border-box;
+    /* Total Width=160px-(2*20px) -(2*8)==>160-56=104px*/
+    /* Total height:80px+(2*8)+40=80-16-40=24 */
+}
